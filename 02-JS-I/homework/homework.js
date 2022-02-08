@@ -149,13 +149,17 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  return Math.round(num)
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  if (Math.round(num) < num){
+    return Math.round(num) + 1;
+  }else{
+    return Math.round(num)
+  }
 }
 
 function numeroRandom() {
